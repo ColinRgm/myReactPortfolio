@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { MyProject } from '../components/MyProject';
+import MyProject from '../components/MyProject';
 
 function Projects() {
     return (
