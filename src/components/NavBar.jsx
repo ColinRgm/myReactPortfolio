@@ -1,34 +1,95 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
 
-    const styles = {
-        display: 'flex',
-        justifyContent: "space-around"
-    }
+    const location = useLocation();
 
-    const textStyle = {
-        color: 'orange',
-    }
+    const navStyles = {
+        display: 'flex',
+        justifyContent: 'center',
+        padding: '10px',
+    };
+
+    const ulStyles = {
+        display: 'flex',
+        justifyContent: 'space-around',
+        width: '100%',
+        listStyle: 'none',
+        padding: 0,
+        margin: 0,
+    };
+
+    const linkStyle = {
+        color: '#453F3C',
+        textDecoration: 'none',
+        fontSize: '1.2em',
+    };
+
+    const activeStyle = {
+        color: '#FC7A1E',
+        fontWeight: 'bold',
+    };
+
+
 
     return (
-        <nav style={ styles }>
-            <ul>
+        <nav style={ navStyles }>
+            <ul style={ ulStyles }>
                 <li>
-                    <Link to="/" style={ textStyle }>Accueil</Link>
+                    <Link
+                        to="/"
+                        style={ {
+                            ...linkStyle,
+                            ...(location.pathname === '/' ? activeStyle : {})
+                        } }
+                    >
+                        Accueil
+                    </Link>
                 </li>
                 <li>
-                    <Link to="/parcours" style={ textStyle }>Parcours</Link>
+                    <Link
+                        to="/parcours"
+                        style={ {
+                            ...linkStyle,
+                            ...(location.pathname === '/parcours' ? activeStyle : {})
+                        } }
+                    >
+                        Parcours
+                    </Link>
                 </li>
                 <li>
-                    <Link to="/passion" style={ textStyle }>Passions</Link>
+                    <Link
+                        to="/passion"
+                        style={ {
+                            ...linkStyle,
+                            ...(location.pathname === '/passion' ? activeStyle : {})
+                        } }
+                    >
+                        Passions
+                    </Link>
                 </li>
                 <li>
-                    <Link to="/project" style={ textStyle }>Projects</Link>
+                    <Link
+                        to="/project"
+                        style={ {
+                            ...linkStyle,
+                            ...(location.pathname === '/project' ? activeStyle : {})
+                        } }
+                    >
+                        Projects
+                    </Link>
                 </li>
                 <li>
-                    <Link to="/contact" style={ textStyle }>Contact</Link>
+                    <Link
+                        to="/contact"
+                        style={ {
+                            ...linkStyle,
+                            ...(location.pathname === '/contact' ? activeStyle : {})
+                        } }
+                    >
+                        Contact
+                    </Link>
                 </li>
             </ul>
         </nav>

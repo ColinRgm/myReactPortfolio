@@ -20,15 +20,15 @@ function MyRightPassion({ title, description, url }) {
         height: '200px',
     }
 
+
     return (
         <>
-            {/* Left text and right image */ }
             <div style={ style }>
 
-                <img src={ url } alt={ title } style={ imgStyle } />
+                <img src={ url } alt={ title } style={ imgStyle }/>
 
-                <div style={ { borderLeft: "3px solid orange", paddingLeft: "25px" } }>
-                    <h3  style={ { color: "orange" } }>{ title }</h3>
+                <div style={ { borderLeft: "#FC7A1E solid 3px", paddingLeft: "25px" } }>
+                    <h3 style={ { color: "#FC7A1E" } }>{ title }</h3>
                     <p>{ description }</p>
                 </div>
             </div>
