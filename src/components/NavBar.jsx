@@ -1,13 +1,32 @@
+import React from 'react';
+import {Link} from "react-router-dom";
+
 function NavBar() {
 
+    const styles = {
+        display: 'flex',
+        justifyContent: "space-around"
+    }
+
+    const textStyle = {
+        textDecoration: 'none',
+        color: 'orange',
+    }
+
+
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a href="../pages/Contact.jsx">Contact</a>
-            <a href="../pages/Parcours.jsx">Parcours</a>
-            <a href="../pages/Passion.jsx">Passions</a>
-            <a href="../pages/Project.jsx">Projects</a>
+        <nav style={styles}>
+           <ul>
+               <li style={textStyle}><Link to="/Home"/>Accueil</li>
+               <li style={textStyle}><Link to="/Contact"/>Contact</li>
+               <li style={textStyle}><Link to="/Parcours"/>Parcours</li>
+               <li style={textStyle}><Link to="/Passion" href=""/>Passion</li>
+               <li style={textStyle}><Link to="/Project" href=""/>Project</li>
+           </ul>
         </nav>
     )
 }
+
+
 
 export default NavBar;
