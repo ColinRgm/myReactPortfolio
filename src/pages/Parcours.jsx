@@ -1,13 +1,11 @@
-import NavBar from "../components/NavBar.jsx";
+import React from "react";
 
 function Parcours() {
     return (
-        <>
-            <NavBar/>
-
+        <div>
             <h1>Parcours</h1>
-        </>
-    )
+        </div>
+    );
 }
 
 export default Parcours;

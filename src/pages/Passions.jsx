@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Contact() {
+function Passions() {
     return (
         <div>
-            <h1>Contact</h1>
+            <h1>Passions</h1>
         </div>
     );
 }
 
-export default Contact;
+export default Passions;

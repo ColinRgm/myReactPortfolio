@@ -1,28 +1,28 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
-import NavBar from "./components/NavBar.jsx";
-
-// Import des pages
-import Home from "./pages/Home.jsx";
-import Contact from "./pages/Contact.jsx";
+import Navbar from './components/NavBar.jsx';
+import Home from './pages/Home';
 import Parcours from "./pages/Parcours.jsx";
-import Passion from "./pages/Passion.jsx";
-import Project from "./pages/Project.jsx";
+import Passions from "./pages/Passions.jsx";
+import Projects from "./pages/Projects.jsx";
+import Contact from './pages/Contact';
 
 function App() {
     return (
+        <>
         <Router>
-            <NavBar />
+            <Navbar />
             <Routes>
                 <Route path="/" element={<Home />} />
-                <Route path="/Contact" element={<Contact />} />
-                <Route path="/Parcours" element={<Parcours />} />
-                <Route path="/Passion" element={<Passion />} />
-                <Route path="/Project" element={<Project />} />
+                <Route path="/parcours" element={<Parcours />} />
+                <Route path="/passion" element={<Passions />} />
+                <Route path="/project" element={<Projects />} />
+                <Route path="/contact" element={<Contact />} />
             </Routes>
         </Router>
+        </>
     );
 }
 
-export default App
+export default App;
