@@ -1,4 +1,6 @@
 import React from 'react';
+
+// Import des dépendances pour les routes
 import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
@@ -32,21 +34,9 @@ function Navbar() {
     };
 
 
-
     return (
         <nav style={ navStyles }>
             <ul style={ ulStyles }>
-                <li>
-                    <Link
-                        to="/"
-                        style={ {
-                            ...linkStyle,
-                            ...(location.pathname === '/' ? activeStyle : {})
-                        } }
-                    >
-                        Accueil
-                    </Link>
-                </li>
                 <li>
                     <Link
                         to="/parcours"
@@ -67,6 +57,17 @@ function Navbar() {
                         } }
                     >
                         Passions
+                    </Link>
+                </li>
+                <li>
+                    <Link
+                        to="/"
+                        style={ {
+                            ...linkStyle,
+                            ...(location.pathname === '/' ? activeStyle : {})
+                        } }
+                    >
+                        Accueil
                     </Link>
                 </li>
                 <li>

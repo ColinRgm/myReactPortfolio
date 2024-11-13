@@ -3,7 +3,10 @@ import React from 'react';
 // Import des dépendances pour les routes
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
+// Import des composants
 import Navbar from './components/NavBar.jsx';
+
+// Import des pages
 import Home from './pages/Home';
 import Parcours from "./pages/Parcours.jsx";
 import Passions from "./pages/Passions.jsx";

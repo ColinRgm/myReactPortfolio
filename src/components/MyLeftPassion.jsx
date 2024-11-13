@@ -22,17 +22,18 @@ function MyRightPassion({ title, description, url }) {
 
 
     return (
-        <>
-            <div style={ style }>
+        <div style={ style }>
 
-                <img src={ url } alt={ title } style={ imgStyle }/>
+            <img src={ url } alt={ title } style={ imgStyle }/>
 
-                <div style={ { borderLeft: "#FC7A1E solid 3px", paddingLeft: "25px" } }>
-                    <h3 style={ { color: "#FC7A1E" } }>{ title }</h3>
-                    <p>{ description }</p>
-                </div>
+            <div style={ {
+                borderLeft: "#FC7A1E solid 3px",
+                paddingLeft: "25px"
+            } }>
+                <h3 style={ { color: "#FC7A1E" } }>{ title }</h3>
+                <p>{ description }</p>
             </div>
-        </>
+        </div>
     )
 }
 

@@ -1,13 +1,12 @@
 import React from 'react';
 
+// Import des composants
 import MyProject from '../components/MyProject';
 
 function Projects() {
 
     return (
         <div>
-            <h1>Projects</h1>
-
             <MyProject />
         </div>
     );
