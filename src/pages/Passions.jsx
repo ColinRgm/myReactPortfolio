@@ -1,8 +1,8 @@
 import React from 'react';
 
 // Import des composants
-import MyRightPassion from "../components/MyRightPassion.jsx";
-import MyLeftPassion from "../components/MyLeftPassion.jsx";
+import MyRightPassion from "../components/passionComponents/MyRightPassion.jsx";
+import MyLeftPassion from "../components/passionComponents/MyLeftPassion.jsx";
 
 function Passions() {
 
