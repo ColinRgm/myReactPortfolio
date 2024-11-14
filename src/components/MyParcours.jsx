@@ -1,31 +1,64 @@
-function MyParcours({ date, description }) {
+function MyParcours({ information, title, description }) {
 
-    const dateStyle = {
+    {/* Information on the left */ }
+    const gridStyle = {
+        display: 'grid',
+        gridTemplateColumns: '30% 70%',
+
+        fontFamily: "\"Courier New\", sans-serif, monospace"
+    }
+
+    const leftGrid = {
         textAlign: "right",
-        fontSize: "18px",
 
-        padding: "25px 25px 0 0",
+        padding: "5px 25px 0 0",
         borderRight: "#FC7A1E 3px solid"
     }
 
-    const descriptionStyle = {
-        fontSize: "16px",
-        lineHeight: "1.7",
+    const informationStyle = {
+        fontSize: "18px",
+        fontWeight: "bold",
+    }
 
-        padding: "25px 25px 10px 0",
+
+    {/* Content on the right */ }
+    const rightGrid = {
+        textAlign: "left",
+
+        padding: "5px 0 10px 25px",
+    }
+
+    const titleStyle = {
+        fontSize: "16px",
+        fontWeight: "bold",
+        lineHeight: "1.7",
+    }
+
+    const descriptionStyle = {
+        fontSize: "14px",
+        lineHeight: "1.5",
+
+        paddingLeft: "20px",
+        margin: "10px 0 0 0",
+
+        whiteSpace: "pre-wrap",
     }
 
 
     return (
-        <div>
-            <div>
-                <div style={ dateStyle }>
-                    <p>{ date }</p>
-                </div>
-                <div style={ descriptionStyle }>
-                    <p>{ description }</p>
-                </div>
+        <div style={ gridStyle }>
+
+            {/* Information on the left */ }
+            <div style={ leftGrid }>
+                <p style={ informationStyle }>{ information }</p>
             </div>
+
+            {/* Content on the right */ }
+            <div style={ rightGrid }>
+                <p style={ titleStyle }>{ title }</p>
+                <p style={ descriptionStyle }>{ description }</p>
+            </div>
+
         </div>
     )
 }

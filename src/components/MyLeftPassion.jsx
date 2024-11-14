@@ -4,11 +4,12 @@ function MyRightPassion({ title, description, url }) {
 
     const style = {
         display: 'grid',
-        gridTemplateColumns: '200px auto',
-        gridTemplateRows: '200px',
+        gridTemplateColumns: '150px auto',
+        gridTemplateRows: '150px',
 
         width: '80%',
 
+        fontFamily: "\"Courier New\", sans-serif, monospace",
         textAlign: 'left',
         alignItems: 'center',
 
@@ -16,8 +17,8 @@ function MyRightPassion({ title, description, url }) {
     }
 
     const imgStyle = {
-        width: '200px',
-        height: '200px',
+        width: '150px',
+        height: '150px',
     }
 
 

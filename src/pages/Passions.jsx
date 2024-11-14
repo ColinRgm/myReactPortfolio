@@ -20,7 +20,7 @@ function Passions() {
             <MyRightPassion
                 title="Hockey sur glace"
                 description="Dès mon plus jeune âge, j’ai été introduit au hockey sur glace et plus précisément à
-            l’équipe du Lausanne Hockey Club, ça a aussi été le premier sport que j’ai eu la chance de pratiquer !
+            l’équipe du Lausanne Hockey Club, ça a aussi été le premier sport que j’ai eu la chance de pratiquer, à l'âge de seulement 3 ans !
             Il y a une sorte de grande histoire d’amour entre ma famille et cette équipe."
                 url="/img/hockey.png"
             />

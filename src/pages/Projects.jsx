@@ -5,9 +5,14 @@ import MyProject from '../components/MyProject';
 
 function Projects() {
 
+    const styles = {
+        fontFamily: "\"Courier New\", sans-serif, monospace",
+    }
+
+
     return (
-        <div>
-            <MyProject />
+        <div style={ styles }>
+            <MyProject/>
         </div>
     );
 }

@@ -11,6 +11,8 @@ function Navbar() {
         display: 'flex',
         justifyContent: 'center',
         padding: '10px',
+
+        fontFamily: "\"Courier New\", sans-serif, monospace"
     };
 
     const ulStyles = {
