@@ -1,5 +1,8 @@
 import React from 'react';
 
+import Button from "../components/formComponents/button.jsx";
+import Input from "../components/formComponents/Input.jsx";
+
 function Contact() {
 
     const styles = {
@@ -7,8 +10,10 @@ function Contact() {
     }
 
     return (
-        <div style={styles}>
+        <div style={ styles }>
             <h1>Contact</h1>
+            <Button/>
+            <Input/>
         </div>
     );
 }
