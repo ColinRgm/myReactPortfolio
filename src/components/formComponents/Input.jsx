@@ -1,8 +1,14 @@
 import React from 'react';
 
-function Input() {
+function Input({type, placeholder}) {
+
+    const styles = {
+        width: '30%',
+    }
+
+
     return (
-        <input type='text' placeholder='Nom' />
+        <input type={type} placeholder={placeholder} style={styles}/>
     )
 }
 
