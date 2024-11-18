@@ -36,7 +36,6 @@ function Home() {
 
     const styles = {
         color: "#453F3C",
-        fontFamily: "\"Courier New\", sans-serif, monospace",
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',

@@ -9,30 +9,29 @@ function Parcours() {
         justifyItems: "center",
         marginTop: "150px",
         marginBottom: "50px",
+
+        grid: {
+            width: "80%",
+
+            // Titre de la grille
+            titleStyle: {
+                fontSize: "20px",
+                fontWeight: "900",
+                textAlign: "right",
+                borderBottom: "#FC7A1E 3px solid",
+                paddingBottom: "25px",
+                marginBottom: "0"
+            }
+        },
     }
-
-    const grid = {
-        width: "80%",
-
-    }
-
-    const titleStyle = {
-        fontSize: "23px",
-        fontWeight: "900",
-        textAlign: "right",
-        borderBottom: "#FC7A1E 3px solid",
-        paddingBottom: "25px",
-        marginBottom: "0"
-    }
-
 
     return (
         <div style={ content }>
 
             { /* Grid concernant mon parcours */ }
-            <div style={ grid }>
+            <div style={ content.grid }>
 
-                <p style={ titleStyle }>Parcours</p>
+                <p style={ content.grid.titleStyle }>PARCOURS</p>
 
                 <MyParcours
                     information="Depuis Août 2021"
@@ -53,8 +52,8 @@ function Parcours() {
 
                 <MyParcours
                     information="Août 2017 - Avril 2018"
-                    title="Apprenti Carrossier peintre"
-                    description="Crrosserie David Piguet, Le Brassus"
+                    title="Apprenti Peintre en carrosserie"
+                    description="Carosserie David Piguet, Le Brassus"
                 />
 
                 <MyParcours
@@ -65,7 +64,7 @@ function Parcours() {
 
                 <MyParcours
                     information="Août 2015 - Juin 2016"
-                    title="Apprenti Dessinateur en michrotechnique"
+                    title="Apprenti Dessinateur en microtechnique"
                     description="ETVJ, Le Sentier"
                 />
 
@@ -78,9 +77,9 @@ function Parcours() {
             </div>
 
             { /* Grid concernant mes compètences en informatique */ }
-            <div style={ grid }>
+            <div style={ content.grid }>
 
-                <p style={ titleStyle }>Compètences informatique</p>
+                <p style={ content.grid.titleStyle }>COMPETENCES INFORMATIQUE</p>
 
                 <MyParcours
                     information="HTML - CSS"

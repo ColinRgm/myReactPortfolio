@@ -5,13 +5,13 @@ import MyProject from '../components/MyProject';
 
 function Projects() {
 
-    const styles = {
-        fontFamily: "\"Courier New\", sans-serif, monospace",
+    const content = {
+
     }
 
 
     return (
-        <div style={ styles }>
+        <div style={ content }>
             <MyProject/>
         </div>
     );

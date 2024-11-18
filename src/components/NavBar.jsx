@@ -17,8 +17,8 @@ function Navbar() {
 
     const ulStyles = {
         display: 'flex',
-        justifyContent: 'space-around',
-        width: '100%',
+        justifyContent: 'space-between',
+        width: '50%',
         listStyle: 'none',
         padding: 0,
         margin: 0,
@@ -27,7 +27,7 @@ function Navbar() {
     const linkStyle = {
         color: '#453F3C',
         textDecoration: 'none',
-        fontSize: '1.2em',
+        fontSize: '1em',
     };
 
     const activeStyle = {
@@ -43,7 +43,11 @@ function Navbar() {
                     <Link
                         to="/parcours"
                         style={ {
+
+                            // Style lien par défaut
                             ...linkStyle,
+
+                            // Style lien actif
                             ...(location.pathname === '/parcours' ? activeStyle : {})
                         } }
                     >
@@ -52,10 +56,10 @@ function Navbar() {
                 </li>
                 <li>
                     <Link
-                        to="/passion"
+                        to="/passions"
                         style={ {
                             ...linkStyle,
-                            ...(location.pathname === '/passion' ? activeStyle : {})
+                            ...(location.pathname === '/passions' ? activeStyle : {})
                         } }
                     >
                         Passions
@@ -74,10 +78,10 @@ function Navbar() {
                 </li>
                 <li>
                     <Link
-                        to="/project"
+                        to="/projects"
                         style={ {
                             ...linkStyle,
-                            ...(location.pathname === '/project' ? activeStyle : {})
+                            ...(location.pathname === '/projects' ? activeStyle : {})
                         } }
                     >
                         Projects

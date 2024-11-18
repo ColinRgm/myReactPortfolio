@@ -8,13 +8,12 @@ import Navbar from './components/NavBar.jsx';
 
 // Import des pages
 import Home from './pages/Home';
-import Parcours from "./pages/Parcours.jsx";
-import Passions from "./pages/Passions.jsx";
-import Projects from "./pages/Projects.jsx";
+import Parcours from "./pages/Parcours";
+import Passions from "./pages/Passions";
+import Projects from "./pages/Projects";
 import Contact from './pages/Contact';
 
 function App() {
-
 
     return (
         <>
@@ -23,8 +22,8 @@ function App() {
                 <Routes>
                     <Route path="/" element={ <Home/> }/>
                     <Route path="/parcours" element={ <Parcours/> }/>
-                    <Route path="/passion" element={ <Passions/> }/>
-                    <Route path="/project" element={ <Projects/> }/>
+                    <Route path="/passions" element={ <Passions/> }/>
+                    <Route path="/projects" element={ <Projects/> }/>
                     <Route path="/contact" element={ <Contact/> }/>
                 </Routes>
             </Router>
