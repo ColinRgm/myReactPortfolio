@@ -1,9 +1,9 @@
 // Import des composants
 import AddProject from "../components/projectComponents/AddProject.jsx";
-// import MyProject from "../components/projectComponents/MyProject.jsx";
+import MyProject from "../components/projectComponents/MyProject.jsx";
 
 // Import de datas
-// import projectsDatas from "../datas/Projects.json";
+import projectsDatas from "../datas/Projects.json";
 
 function ProjectsPage() {
 
@@ -17,6 +17,15 @@ function ProjectsPage() {
     return (
 
         <div style={ content }>
+
+            { projectsDatas.map((item, index) => (
+                <MyProject
+                    key={ index }
+                    title={ item.title }
+                    description={ item.description }
+                    url={ item.url }
+                />
+            )) }
 
             <AddProject/>
 

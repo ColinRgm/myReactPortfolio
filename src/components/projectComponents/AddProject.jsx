@@ -8,7 +8,7 @@ function AddProject() {
         Swal.fire({
             title: 'Ajouter un projet',
             html: `
-                <div style="display: grid; gap: 50px">
+                <div style="display: grid; gap: 100px">
                 <!-- Titre du projet -->
                     <div>             
                         <label for="swal-title">Titre du project</label>

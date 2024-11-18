@@ -1,4 +1,4 @@
-function MyProject(title, description, url) {
+function MyProject({ title, description, url }) {
 
     const content = {
         display: 'grid',
@@ -26,7 +26,7 @@ function MyProject(title, description, url) {
         <div style={ content }>
             <h1 style={ content.titleStyle }>{ title }</h1>
             <p style={ content.descriptionStyle }>{ description }</p>
-            <img style={ content.imgStyle } src={ url } alt=""/>
+            <img style={ content.imgStyle } src={ url } alt={ title }/>
         </div>
 
     )
