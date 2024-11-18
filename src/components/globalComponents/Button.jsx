@@ -13,7 +13,9 @@ function Button({ text, onClick }) {
     }
 
     return (
-        <button style={ buttonStyles } onClick={onClick}>{ text }</button>
+
+        <button style={ buttonStyles } onClick={ onClick }>{ text }</button>
+
     )
 
 }
