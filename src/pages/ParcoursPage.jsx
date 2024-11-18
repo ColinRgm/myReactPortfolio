@@ -1,7 +1,7 @@
 // Import des composants
-import MyParcours from "../components/MyParcours";
+import MyParcours from "../components/parcoursComponents/MyParcours.jsx";
 
-function Parcours() {
+function ParcoursPage() {
 
     const content = {
         justifyItems: "center",
@@ -142,4 +142,4 @@ function Parcours() {
     );
 }
 
-export default Parcours;
+export default ParcoursPage;

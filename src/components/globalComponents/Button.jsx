@@ -1,4 +1,4 @@
-function Button({ text }) {
+function Button({ text, onClick }) {
 
     const buttonStyles = {
         backgroundColor: "#453F3C",
@@ -13,7 +13,7 @@ function Button({ text }) {
     }
 
     return (
-        <button style={ buttonStyles }>{ text }</button>
+        <button style={ buttonStyles } onClick={onClick}>{ text }</button>
     )
 
 }

@@ -1,6 +1,6 @@
 // Import des composants
-import Input from "./formComponents/Input";
-import Button from "./formComponents/Button";
+import Input from "./Input.jsx";
+import Button from "../globalComponents/Button.jsx";
 
 function ContactForm() {
 

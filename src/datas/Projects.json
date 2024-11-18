@@ -1,0 +1,17 @@
+[
+  {
+    "title": "HTML / CSS",
+    "description": "",
+    "url": "/img/projectsPage/projectOne.png"
+  },
+  {
+    "title": "HTML / CSS / JAVASCRIPT",
+    "description": "",
+    "url": "/img/projectsPage/projectTwo.png"
+  },
+  {
+    "title": "FIGMA",
+    "description": "Maquette pour un futur projet",
+    "url": "/img/projectsPage/projectThree.png"
+  }
+]

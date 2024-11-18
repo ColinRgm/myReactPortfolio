@@ -1,17 +1,15 @@
-import React from 'react';
-
 // Import des dépendances pour les routes
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // Import des composants
-import Navbar from './components/NavBar.jsx';
+import Navbar from './components/globalComponents/NavBar.jsx';
 
 // Import des pages
-import Home from './pages/Home';
-import Parcours from "./pages/Parcours";
-import Passions from "./pages/Passions";
-import Projects from "./pages/Projects";
-import Contact from './pages/Contact';
+import HomePage from './pages/HomePage.jsx';
+import ParcoursPage from "./pages/ParcoursPage.jsx";
+import PassionsPage from "./pages/PassionsPage.jsx";
+import ProjectsPage from "./pages/ProjectsPage.jsx";
+import ContactPage from './pages/ContactPage.jsx';
 
 function App() {
 
@@ -20,11 +18,11 @@ function App() {
             <Router>
                 <Navbar/>
                 <Routes>
-                    <Route path="/" element={ <Home/> }/>
-                    <Route path="/parcours" element={ <Parcours/> }/>
-                    <Route path="/passions" element={ <Passions/> }/>
-                    <Route path="/projects" element={ <Projects/> }/>
-                    <Route path="/contact" element={ <Contact/> }/>
+                    <Route path="/" element={ <HomePage/> }/>
+                    <Route path="/parcours" element={ <ParcoursPage/> }/>
+                    <Route path="/passions" element={ <PassionsPage/> }/>
+                    <Route path="/projects" element={ <ProjectsPage/> }/>
+                    <Route path="/contact" element={ <ContactPage/> }/>
                 </Routes>
             </Router>
         </>

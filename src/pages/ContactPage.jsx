@@ -1,8 +1,8 @@
 // Import des composants
-import ContactInformations from "../components/ContactInformations";
-import ContactForm from "../components/ContactForm";
+import ContactInformations from "../components/contactComponents/ContactInformations.jsx";
+import ContactForm from "../components/contactComponents/ContactForm.jsx";
 
-function Contact() {
+function ContactPage() {
 
     const content = {
         display: "grid",
@@ -14,7 +14,7 @@ function Contact() {
 
         justifyItems: 'center',
         alignItems: "center",
-        margin: "150px auto 50% auto",
+        margin: "150px auto 50px auto",
     }
 
     return (
@@ -28,4 +28,4 @@ function Contact() {
     );
 }
 
-export default Contact;
+export default ContactPage;

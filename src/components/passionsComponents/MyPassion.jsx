@@ -12,17 +12,17 @@ function MyPassion({ title, description, url, reverse }) {
 
         gap: "25px",
 
-        // Titre passion
-        title: {
+        // Titre de la passion
+        titleStyle: {
             color: "#FC7A1E"
         },
 
-        // Description passion
-        description: {
+        // Description de la passion
+        descriptionStyle: {
             fontSize: "15px"
         },
 
-        // Image passion
+        // Image de la passion
         imgStyle: {
             width: '150px',
             height: '150px'
@@ -39,8 +39,8 @@ function MyPassion({ title, description, url, reverse }) {
                 paddingLeft: !reverse ? "0" : "25px",
                 paddingRight: !reverse ? "25px" : "0"
             } }>
-                <h3 style={ content.title }>{ title }</h3>
-                <p style={ content.description }>{ description }</p>
+                <h3 style={ content.titleStyle }>{ title }</h3>
+                <p style={ content.descriptionStyle }>{ description }</p>
             </div>
 
             { !reverse && <img src={ url } alt={ title } style={ content.imgStyle }/> }

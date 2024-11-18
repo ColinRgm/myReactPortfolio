@@ -1,5 +1,5 @@
 // Import des composants
-import Button from "./formComponents/Button";
+import Button from "../globalComponents/Button.jsx";
 
 function ContactInformations() {
 
@@ -70,11 +70,11 @@ function ContactInformations() {
 
             <div style={ content.myLink }>
                 <a href="https://www.linkedin.com/in/colin-regamey-916710179/" target="_blank">
-                    <img src="/img/linkedin.svg" alt="linkedin" style={ content.myLink.logos }/>
+                    <img src="/img/contactPage/linkedin.svg" alt="linkedin" style={ content.myLink.logos }/>
                 </a>
 
                 <a href="https://github.com/ColinRgm" target="_blank">
-                    <img src="/img/github.svg" alt="github" style={ content.myLink.logos }/>
+                    <img src="/img/contactPage/github.svg" alt="github" style={ content.myLink.logos }/>
                 </a>
 
                 <a href="/docs/curriculumVitae.pdf" download>

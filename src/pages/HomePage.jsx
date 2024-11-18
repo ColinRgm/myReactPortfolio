@@ -1,7 +1,7 @@
 // Import des dépendances
 import React, { useEffect } from 'react';
 
-function Home() {
+function HomePage() {
 
     const Typewriter = ({ text, delay }) => {
         const [currentText, setCurrentText] = React.useState('');
@@ -71,4 +71,4 @@ function Home() {
     )
 }
 
-export default Home;
+export default HomePage;
