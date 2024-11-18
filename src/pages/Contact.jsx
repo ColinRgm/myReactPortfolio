@@ -1,7 +1,6 @@
-import React from 'react';
-
-import ContactInformations from "../components/ContactInformations.jsx";
-import ContactForm from "../components/ContactForm.jsx";
+// Import des composants
+import ContactInformations from "../components/ContactInformations";
+import ContactForm from "../components/ContactForm";
 
 function Contact() {
 

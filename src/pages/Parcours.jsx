@@ -1,5 +1,3 @@
-import React from "react";
-
 // Import des composants
 import MyParcours from "../components/MyParcours";
 

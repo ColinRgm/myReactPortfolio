@@ -1,10 +1,10 @@
-import Input from "./formComponents/Input.jsx";
-import Button from "./formComponents/Button.jsx";
-import React from "react";
+// Import des composants
+import Input from "./formComponents/Input";
+import Button from "./formComponents/Button";
 
 function ContactForm() {
 
-    const contactForm = {
+    const content = {
         justifyItems: "center",
         alignItems: "center",
         width: "100%",
@@ -12,7 +12,8 @@ function ContactForm() {
 
     return (
 
-        <div style={ contactForm }>
+        <div style={ content }>
+
             <Input
                 nameInput="Prénom"
                 type="text"
@@ -37,6 +38,7 @@ function ContactForm() {
             <Button
                 text="Envoyer"
             />
+
         </div>
     )
 }

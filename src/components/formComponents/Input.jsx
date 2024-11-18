@@ -1,5 +1,3 @@
-import React from 'react';
-
 function Input({ type, nameInput }) {
 
     const content = {
@@ -7,6 +5,7 @@ function Input({ type, nameInput }) {
         position: "relative",
         width: "100%",
 
+        // Label du placeholder
         label: {
             position: "absolute",
             top: "0",
@@ -17,6 +16,7 @@ function Input({ type, nameInput }) {
             padding: "10px 20px",
         },
 
+        // Placeholder
         input: {
             height: "25px",
             width: "80%",
@@ -30,7 +30,6 @@ function Input({ type, nameInput }) {
             fontSize: "15px"
         }
     }
-
 
     return (
         <div style={ content }>

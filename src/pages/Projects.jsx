@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Import des composants
 import MyProject from '../components/MyProject';
 
@@ -8,7 +6,6 @@ function Projects() {
     const content = {
 
     }
-
 
     return (
         <div style={ content }>

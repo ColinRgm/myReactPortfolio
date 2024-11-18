@@ -1,10 +1,9 @@
-import React from "react";
-
-import Button from "./formComponents/Button.jsx";
+// Import des composants
+import Button from "./formComponents/Button";
 
 function ContactInformations() {
 
-    const myInformation = {
+    const content = {
         textAlign: "center",
         width: "100%",
         height: "100%",
@@ -12,14 +11,18 @@ function ContactInformations() {
         alignItems: "center",
         justifyContent: "space-between",
 
-        // Ligne de séparation
+        // Lignes de séparation
         separator: {
+
+            // Petite ligne
             small: {
                 border: "none",
                 borderTop: "3px solid #FC7A1E",
                 margin: "auto",
                 width: "20%"
             },
+
+            // Grande ligne
             large: {
                 border: "none",
                 borderTop: "3px solid #FC7A1E",
@@ -44,42 +47,41 @@ function ContactInformations() {
         }
     }
 
-
     return (
 
-            <div style={ myInformation }>
+        <div style={ content }>
 
-                <div>
-                    <p><strong>Colin</strong> Regamey</p>
-                    <p>Suisse, Vaud</p>
-                    <p>25 ans</p>
-                </div>
-
-                <hr style={ myInformation.separator.small }></hr>
-
-                <div>
-                    <p>Je suis un jeune en quatrième année d'apprentissage
-                        en tant qu'
-                        <span style={ { color: "#FC7A1E" } }>informaticien développement d'application.</span>
-                    </p>
-                </div>
-
-                <hr style={ myInformation.separator.large }></hr>
-
-                <div style={ myInformation.myLink }>
-                    <a href="https://www.linkedin.com/in/colin-regamey-916710179/" target="_blank">
-                        <img src="/img/linkedin.svg" alt="linkedin" style={ myInformation.myLink.logos }/>
-                    </a>
-
-                    <a href="https://github.com/ColinRgm" target="_blank">
-                        <img src="/img/github.svg" alt="github" style={ myInformation.myLink.logos }/>
-                    </a>
-
-                    <a href="/docs/curriculumVitae.pdf" download>
-                        <Button text="Télécharger mon CV"/>
-                    </a>
-                </div>
+            <div>
+                <p><strong>Colin</strong> Regamey</p>
+                <p>Suisse, Vaud</p>
+                <p>25 ans</p>
             </div>
+
+            <hr style={ content.separator.small }></hr>
+
+            <div>
+                <p>Je suis un jeune en quatrième année d'apprentissage
+                    en tant qu'
+                    <span style={ { color: "#FC7A1E" } }>informaticien développement d'application.</span>
+                </p>
+            </div>
+
+            <hr style={ content.separator.large }></hr>
+
+            <div style={ content.myLink }>
+                <a href="https://www.linkedin.com/in/colin-regamey-916710179/" target="_blank">
+                    <img src="/img/linkedin.svg" alt="linkedin" style={ content.myLink.logos }/>
+                </a>
+
+                <a href="https://github.com/ColinRgm" target="_blank">
+                    <img src="/img/github.svg" alt="github" style={ content.myLink.logos }/>
+                </a>
+
+                <a href="/docs/curriculumVitae.pdf" download>
+                    <Button text="Télécharger mon CV"/>
+                </a>
+            </div>
+        </div>
     )
 }
 

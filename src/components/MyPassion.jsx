@@ -1,5 +1,3 @@
-import React from 'react';
-
 function MyPassion({ title, description, url, reverse }) {
 
     const content = {
@@ -9,22 +7,25 @@ function MyPassion({ title, description, url, reverse }) {
 
         width: '80%',
 
-        textAlign: 'right',
+        textAlign: reverse ? 'left' : 'right',
         alignItems: 'center',
 
         gap: "25px",
 
+        // Titre passion
         title: {
             color: "#FC7A1E"
         },
 
+        // Description passion
         description: {
-            fontSize: "15px",
+            fontSize: "15px"
         },
 
+        // Image passion
         imgStyle: {
             width: '150px',
-            height: '150px',
+            height: '150px'
         }
     }
 

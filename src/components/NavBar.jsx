@@ -1,6 +1,4 @@
-import React from 'react';
-
-// Import des dépendances pour les routes
+// Import des dépendances
 import { Link, useLocation } from 'react-router-dom';
 
 function Navbar() {
@@ -12,43 +10,44 @@ function Navbar() {
         justifyContent: 'center',
         padding: '10px',
 
-        fontFamily: "\"Courier New\", sans-serif, monospace"
-    };
+        // Contenu de la NavBar
+        ulStyles: {
+            display: 'flex',
+            justifyContent: 'space-between',
+            width: '50%',
+            listStyle: 'none',
+            padding: 0,
+            margin: 0,
 
-    const ulStyles = {
-        display: 'flex',
-        justifyContent: 'space-between',
-        width: '50%',
-        listStyle: 'none',
-        padding: 0,
-        margin: 0,
-    };
+            // Lien de la NavBar
+            linkStyle: {
+                color: '#453F3C',
+                textDecoration: 'none',
+                fontSize: '1em',
+            },
 
-    const linkStyle = {
-        color: '#453F3C',
-        textDecoration: 'none',
-        fontSize: '1em',
+            // Lien actif de la NavBar
+            activeStyle: {
+                color: '#FC7A1E',
+                fontWeight: 'bold',
+            }
+        }
     };
-
-    const activeStyle = {
-        color: '#FC7A1E',
-        fontWeight: 'bold',
-    };
-
 
     return (
+
         <nav style={ navStyles }>
-            <ul style={ ulStyles }>
+            <ul style={ navStyles.ulStyles }>
                 <li>
                     <Link
                         to="/parcours"
                         style={ {
 
                             // Style lien par défaut
-                            ...linkStyle,
+                            ...navStyles.ulStyles.linkStyle,
 
                             // Style lien actif
-                            ...(location.pathname === '/parcours' ? activeStyle : {})
+                            ...(location.pathname === '/parcours' ? navStyles.ulStyles.activeStyle : {})
                         } }
                     >
                         Parcours
@@ -58,8 +57,8 @@ function Navbar() {
                     <Link
                         to="/passions"
                         style={ {
-                            ...linkStyle,
-                            ...(location.pathname === '/passions' ? activeStyle : {})
+                            ...navStyles.ulStyles.linkStyle,
+                            ...(location.pathname === '/passions' ? navStyles.ulStyles.activeStyle : {})
                         } }
                     >
                         Passions
@@ -69,8 +68,8 @@ function Navbar() {
                     <Link
                         to="/"
                         style={ {
-                            ...linkStyle,
-                            ...(location.pathname === '/' ? activeStyle : {})
+                            ...navStyles.ulStyles.linkStyle,
+                            ...(location.pathname === '/' ? navStyles.ulStyles.activeStyle : {})
                         } }
                     >
                         Accueil
@@ -80,8 +79,8 @@ function Navbar() {
                     <Link
                         to="/projects"
                         style={ {
-                            ...linkStyle,
-                            ...(location.pathname === '/projects' ? activeStyle : {})
+                            ...navStyles.ulStyles.linkStyle,
+                            ...(location.pathname === '/projects' ? navStyles.ulStyles.activeStyle : {})
                         } }
                     >
                         Projects
@@ -91,8 +90,8 @@ function Navbar() {
                     <Link
                         to="/contact"
                         style={ {
-                            ...linkStyle,
-                            ...(location.pathname === '/contact' ? activeStyle : {})
+                            ...navStyles.ulStyles.linkStyle,
+                            ...(location.pathname === '/contact' ? navStyles.ulStyles.activeStyle : {})
                         } }
                     >
                         Contact
@@ -100,6 +99,7 @@ function Navbar() {
                 </li>
             </ul>
         </nav>
+
     );
 }
 

@@ -1,5 +1,3 @@
-import React from 'react';
-
 // Import des composants
 import MyPassion from "../components/MyPassion.jsx";
 

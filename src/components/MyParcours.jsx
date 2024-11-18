@@ -1,8 +1,6 @@
 function MyParcours({ information, title, description }) {
 
     const content = {
-        fontFamily: "\"Courier New\", sans-serif, monospace",
-
         display: 'grid',
         gridTemplateColumns: '30% 70%',
 

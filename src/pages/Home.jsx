@@ -1,3 +1,4 @@
+// Import des dépendances
 import React, { useEffect } from 'react';
 
 function Home() {
@@ -34,13 +35,18 @@ function Home() {
         );
     };
 
-    const styles = {
+    const content = {
         color: "#453F3C",
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         alignItems: 'center',
         height: '70vh',
+
+        titleStyle: {
+            fontSize: 15,
+            fontWeight: 'bold'
+        }
     };
 
     return (
@@ -53,8 +59,9 @@ function Home() {
                     }
                 `}
             </style>
-            <div style={ styles }>
-                <h1 style={ { fontSize: 15, fontWeight: 'bold' } }>
+
+            <div style={ content }>
+                <h1 style={ content.titleStyle }>
                     <Typewriter text="Bonjour, je m'appelle Colin Regamey" delay={ 150 }/>
                 </h1>
                 <h2>Bienvenue sur mon portfolio</h2>
