@@ -1,39 +1,37 @@
-import Input from "./Input.jsx";
-import Button from "./button.jsx";
+import Input from "./formComponents/Input.jsx";
+import Button from "./formComponents/Button.jsx";
 import React from "react";
 
 function ContactForm() {
 
     const contactForm = {
-        backgroundColor: "white",
         justifyItems: "center",
         alignItems: "center",
         width: "100%",
-        display: "grid",
     }
 
     return (
 
         <div style={ contactForm }>
             <Input
+                nameInput="Prénom"
                 type="text"
-                placeholder="Prénom"
             />
             <Input
+                nameInput="Nom"
                 type="text"
-                placeholder="Nom"
             />
             <Input
+                nameInput="E-Mail"
                 type="email"
-                placeholder="E-Mail"
             />
             <Input
+                nameInput="Sujet"
                 type="text"
-                placeholder="Sujet"
             />
             <Input
-                type="text"
-                placeholder="Message"
+                nameInput="Message"
+                type="longtext"
             />
 
             <Button
