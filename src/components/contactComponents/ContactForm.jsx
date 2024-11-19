@@ -41,12 +41,17 @@ function ContactForm() {
         justifyItems: "center",
         alignItems: "center",
         width: "100%",
+
+        formStyle: {
+            width: "100%",
+            textAlign: "center",
+        }
     }
 
     return (
 
         <div style={ content }>
-            <form onSubmit={ submitForm }>
+            <form style={ content.formStyle } onSubmit={ submitForm }>
                 <Input
                     nameInput="Prénom"
                     type="text"

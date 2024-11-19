@@ -60,9 +60,8 @@ function ContactInformations() {
             <hr style={ content.separator.small }></hr>
 
             <div>
-                <p>Je suis un jeune en quatrième année d'apprentissage
-                    en tant qu'
-                    <span style={ { color: "#FC7A1E" } }>informaticien développement d'application.</span>
+                <p style={ content.information }>Je suis un jeune en quatrième année d'apprentissage en tant qu'
+                    <span style={ { color: "#FC7A1E", fontWeight: "bold" } }>informaticien développement d'application.</span>
                 </p>
             </div>
 
