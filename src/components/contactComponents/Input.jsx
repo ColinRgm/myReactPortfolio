@@ -13,7 +13,7 @@ function Input({ type, nameInput }) {
             transform: "translate(60px, 0px)",
             color: "#453F3C",
             backgroundColor: "#DADADA",
-            padding: "10px 20px",
+            padding: "5px 20px",
         },
 
         // Placeholder
