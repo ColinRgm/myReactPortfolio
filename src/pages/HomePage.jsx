@@ -44,7 +44,7 @@ function HomePage() {
         height: '70vh',
 
         titleStyle: {
-            fontSize: 15,
+            fontSize: 20,
             fontWeight: 'bold'
         }
     };
