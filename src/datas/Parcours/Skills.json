@@ -1,0 +1,67 @@
+[
+  {
+    "information": "HTML / CSS",
+    "title": "Création d'un site web",
+    "description": [
+      "Mise en page \n",
+      "Animation CSS \n",
+      "Design"
+    ]
+  },
+  {
+    "information": "JAVASCRIPT",
+    "title": "Réalisation d'un calculateur de moyennes",
+    "description": [
+      "Animation \n",
+      "Interaction HTML"
+    ]
+  },
+  {
+    "information": "PHP",
+    "title": "Introduction via vidéo et tutoriels",
+    "description": "Récupération de données d'un formulaire"
+  },
+  {
+    "information": "GIT",
+    "title": "Versionning de projet",
+    "description":[
+      "Hébergement de code sources \n",
+      "Gestion de projet à plusieurs"
+    ]
+  },
+  {
+    "information": "WORDPRESS",
+    "title": "Gestion de site web",
+    "description": [
+      "Mise à jour des plugins \n",
+      "Backup \n",
+      "Gestion des sauvegardes"
+    ]
+  },
+  {
+    "information": "RUST",
+    "title": "Création d'une application console",
+    "description": [
+      "Gestion des entrées utilisateurs \n",
+      "Création de drapeaux personnalisés \n",
+      "Utilisation de fichier JSON pour le stockage de données"
+    ]
+  },
+  {
+    "information": "REACT",
+    "title": "Création d'un site web",
+    "description": [
+      "Gestion des routes \n",
+      "Utilisation de composants \n",
+      "Utilisation de fichier JSON pour le stockage de données"
+    ]
+  },
+  {
+    "information": "REACT NATIVE",
+    "title": "Création d'une application mobile (en cours)",
+    "description": [
+      "Création de page \n",
+      "Design"
+    ]
+  }
+]

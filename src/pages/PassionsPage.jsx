@@ -2,7 +2,7 @@
 import MyPassion from "../components/passionsComponents/MyPassion.jsx";
 
 // Import de datas
-import passionsDatas from "../datas/Passions.json";
+import passionsDatas from "../datas/Passions/Passions.json";
 
 function PassionsPage() {
 

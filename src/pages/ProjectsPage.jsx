@@ -3,7 +3,7 @@ import AddProject from "../components/projectComponents/AddProject.jsx";
 import MyProject from "../components/projectComponents/MyProject.jsx";
 
 // Import de datas
-import projectsDatas from "../datas/Projects.json";
+import projectsDatas from "../datas/Projets/Projects.json";
 
 function ProjectsPage() {
 
