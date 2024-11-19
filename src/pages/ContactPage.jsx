@@ -14,7 +14,7 @@ function ContactPage() {
 
         justifyItems: 'center',
         alignItems: "center",
-        margin: "50px auto 100px auto",
+        margin: "150px auto 100px auto",
     }
 
     return (

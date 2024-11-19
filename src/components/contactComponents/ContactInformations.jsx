@@ -11,6 +11,11 @@ function ContactInformations() {
         alignItems: "center",
         justifyContent: "space-between",
 
+        myJobStyle: {
+            color: "#FC7A1E",
+            fontWeight: "bold"
+        },
+
         // Lignes de séparation
         separator: {
 
@@ -61,7 +66,7 @@ function ContactInformations() {
 
             <div>
                 <p style={ content.information }>Je suis un jeune en quatrième année d'apprentissage en tant qu'
-                    <span style={ { color: "#FC7A1E", fontWeight: "bold" } }>informaticien développement d'application.</span>
+                    <span style={ content.myJobStyle }>informaticien développement d'application.</span>
                 </p>
             </div>
 

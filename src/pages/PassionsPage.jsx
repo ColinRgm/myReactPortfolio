@@ -8,7 +8,7 @@ function PassionsPage() {
 
     const content = {
         justifyItems: "center",
-        marginTop: "50px",
+        marginTop: "150px",
         marginBottom: "100px",
     }
 
