@@ -14,6 +14,7 @@ function ParcoursPage() {
 
         grid: {
             width: "80%",
+            marginBottom: 100,
 
             // Titre de la grille
             titleStyle: {
@@ -36,12 +37,12 @@ function ParcoursPage() {
                 <p style={ content.grid.titleStyle }>PARCOURS</p>
 
                 {
-                    parcours.map((parcour, index) => (
+                    [...parcours].reverse().map((parcours, index) => (
                         <MyParcours
                             key={ index }
-                            information={ parcour.information }
-                            title={ parcour.title }
-                            description={ parcour.description }
+                            information={ parcours.information }
+                            title={ parcours.title }
+                            description={ parcours.description }
                         />
                     ))
                 }

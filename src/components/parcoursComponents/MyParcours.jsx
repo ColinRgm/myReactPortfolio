@@ -1,3 +1,6 @@
+// Import des dépendances
+import { useState } from "react";
+
 function MyParcours({ information, title, description }) {
 
     const content = {
@@ -26,9 +29,13 @@ function MyParcours({ information, title, description }) {
 
             // Titre du parcours / compètences
             titleStyle: {
+                backgroundColor: "transparent",
+                border: "none",
+                marginTop: "15px",
                 fontSize: "15px",
                 fontWeight: "bold",
                 lineHeight: "1.7",
+                cursor: "pointer"
             },
 
             // Description du parcours / compètences
@@ -44,6 +51,10 @@ function MyParcours({ information, title, description }) {
         }
     }
 
+    const [isOpen, setIsOpen] = useState(false);
+
+    const dropDown = () => setIsOpen(prevState => !prevState);
+
     return (
         <div style={ content }>
 
@@ -54,8 +65,20 @@ function MyParcours({ information, title, description }) {
 
             {/* Content on the right */ }
             <div style={ content.rightGrid }>
-                <p style={ content.rightGrid.titleStyle }>{ title }</p>
-                <p style={ content.rightGrid.descriptionStyle }>{ description }</p>
+
+                <button style={ content.rightGrid.titleStyle } onClick={dropDown}>
+                    { title }
+                    <span style={{ marginLeft: '10px', fontSize: '0.8em' }}>
+                        {isOpen ? '▲' : '▼'}
+                    </span>
+                </button>
+
+                { isOpen && (
+                    <div>
+                        <p style={ content.rightGrid.descriptionStyle }>{ description }</p>
+                    </div>
+
+                ) }
             </div>
 
         </div>
