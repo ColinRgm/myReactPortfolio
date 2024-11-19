@@ -30,6 +30,7 @@ function MyPassion({ title, description, url, reverse }) {
     }
 
     return (
+
         <div style={ content }>
             { reverse && <img src={ url } alt={ title } style={ content.imgStyle }/> }
 

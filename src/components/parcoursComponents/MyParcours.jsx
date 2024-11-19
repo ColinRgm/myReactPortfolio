@@ -2,7 +2,7 @@ function MyParcours({ information, title, description }) {
 
     const content = {
         display: 'grid',
-        gridTemplateColumns: '30% 70%',
+        gridTemplateColumns: '40% 60%',
 
         // Grille de gauche
         leftGrid: {
@@ -34,7 +34,7 @@ function MyParcours({ information, title, description }) {
             // Description du parcours / compètences
             descriptionStyle: {
                 fontSize: "13px",
-                lineHeight: "1.5",
+                lineHeight: "25px",
 
                 paddingLeft: "20px",
                 margin: "10px 0 0 0",
