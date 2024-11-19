@@ -13,6 +13,8 @@ function ProjectsPage() {
         marginBottom: "100px",
     }
 
+    const savedProjects = JSON.parse(localStorage.getItem("projects")) || [];
+
     return (
 
         <div style={ content }>
@@ -25,6 +27,16 @@ function ProjectsPage() {
                     url={ item.url }
                 />
             )) }
+
+            { savedProjects.map((project, index) => (
+                <MyProject
+                    key={ `saved-${ index }` } // Clé unique pour éviter les conflits
+                    title={ project.title }
+                    description={ project.description }
+                    url={ project.imageProjectFileBase64 }
+                />
+            )) }
+
 
             <AddProject/>
 

@@ -36,9 +36,9 @@ function MyProject({ title, description, url }) {
 
         <div style={ content }>
             <div>
-                <h1 style={ content.titleStyle }>{ title }</h1>
+                <h1 style={ content.titleStyle}>{ title  }</h1>
                 <p style={ content.descriptionStyle }>{ description }</p>
-                <img style={ content.imgStyle } src={ url } alt={ title }/>
+                {url && <img style={ content.imgStyle } src={ url } alt={ title }/>}
             </div>
             <hr style={ content.separator.large }></hr>
         </div>

@@ -1,5 +1,6 @@
 import Swal from "sweetalert2";
 import Button from "../globalComponents/Button.jsx";
+import MyProject from "./MyProject.jsx";
 
 function AddProject() {
 
@@ -31,32 +32,57 @@ function AddProject() {
             confirmButtonText: 'Enregistrer',
 
             preConfirm: () => {
-                const title = document.getElementById('swal-title').value;
-                const description = document.getElementById('swal-description').value;
-                const imageFile = document.getElementById('swal-image').files[ 0 ];
 
-                if (!title || !description || !imageFile) {
+                // Récupérer les valeurs des inputs
+                const titleProject = document.getElementById('swal-title').value;
+                const descriptionProject = document.getElementById('swal-description').value;
+                const imageProjectFile = document.getElementById('swal-image').files[ 0 ];
+
+                if (!titleProject || !descriptionProject || !imageProjectFile) {
                     Swal.showValidationMessage('Tout les champs sont obligatoires !');
                     return;
                 }
 
-                return { title, description, imageFile };
+                return new Promise((resolve) => {
+                    const reader = new FileReader();
+
+                    reader.onload = () => {
+                        resolve({
+                            titleProject,
+                            descriptionProject,
+                            imageProjectFileBase64: reader.result
+                        });
+                    };
+                    reader.readAsDataURL(imageProjectFile);
+                })
             },
 
         }).then((result) => {
             if (result.isConfirmed) {
-                const { title, description, imageFile } = result.value;
+                const { titleProject, descriptionProject, imageProjectFileBase64 } = result.value;
 
-                // Exemple : traiter les données du formulaire
-                console.log('Title:', title);
-                console.log('Description:', description);
-                console.log('Image File:', imageFile);
+                const existingProjects = JSON.parse(localStorage.getItem('projects')) || [];
+
+                const newProjects = {
+                    title: titleProject,
+                    description: descriptionProject,
+                    imageProjectFileBase64: imageProjectFileBase64
+                };
+
+                // Ajout du nouveau projet dans le tableau de projet existant
+                existingProjects.push(newProjects);
+
+                // Sauvegarde du tableau
+                localStorage.setItem('projects', JSON.stringify(existingProjects));
 
                 // Afficher une alerte de succès
                 Swal.fire({
                     icon: 'success',
                     title: 'Parfait !',
                     text: 'Vous avez bien ajouté un projet',
+                }).then(() => {
+                    // Recharger la page
+                    window.location.reload();
                 });
             }
         });
@@ -64,10 +90,14 @@ function AddProject() {
 
     return (
 
-        <Button
-            text="Ajouter un project"
-            onClick={ buttonAddProject }
-        />
+        <>
+            <Button
+                text="Ajouter un project"
+                onClick={ buttonAddProject }
+            />
+
+
+        </>
 
     );
 }
