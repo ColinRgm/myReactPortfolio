@@ -50,24 +50,17 @@ function HomePage() {
     };
 
     return (
-        <>
-            <style>
-                {`
-                    @keyframes blink {
-                        0%, 50% { opacity: 1; }
-                        50%, 100% { opacity: 0; }
-                    }
-                `}
-            </style>
 
-            <div style={ content }>
-                <h1 style={ content.titleStyle }>
-                    <Typewriter text="Bonjour, je m'appelle Colin Regamey" delay={ 150 }/>
-                </h1>
-                <h2>Bienvenue sur mon portfolio</h2>
-            </div>
-            );
-        </>
+        <div style={ content }>
+
+            <h1 style={ content.titleStyle }>
+                <Typewriter text="Bonjour, je m'appelle Colin Regamey" delay={ 150 }/>
+            </h1>
+
+            <h2>Bienvenue sur mon portfolio</h2>
+
+        </div>
+
     )
 }
 
