@@ -9,6 +9,13 @@ function Navbar() {
         display: 'flex',
         justifyContent: 'center',
         padding: '10px',
+        position: 'fixed',
+        top: 0,
+        left: 0,
+        width: '100%',
+        backgroundColor: '#DADADA',
+        zIndex: 1000,
+
 
         // Contenu de la NavBar
         ulStyles: {
