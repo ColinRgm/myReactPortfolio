@@ -20,24 +20,29 @@ function ProjectsPage() {
 
         <div style={ content }>
 
-            { projectsDatas.map((item, index) => (
-                <MyProject
-                    key={ index }
-                    title={ item.title }
-                    description={ item.description }
-                    url={ item.url }
-                />
-            )) }
+            { /* Affichage des projets venant du fichier JSON */ }
+            {
+                projectsDatas.map((item, index) => (
+                    <MyProject
+                        key={ index }
+                        title={ item.title }
+                        description={ item.description }
+                        url={ item.url }
+                    />
+                )) }
 
-            { savedProjects.map((project, index) => (
-                <MyProject
-                    key={ `saved-${ index }` } // Clé unique pour éviter les conflits
-                    title={ project.title }
-                    description={ project.description }
-                    url={ project.imageProjectFileBase64 }
-                />
-            )) }
+            { /* Affichage des projets ajouté via le bouton */ }
+            {
+                savedProjects.map((project, index) => (
+                    <MyProject
+                        key={ `saved-${ index }` } // Clé unique pour éviter les conflits
+                        title={ project.title }
+                        description={ project.description }
+                        url={ project.imageProjectFileBase64 }
+                    />
+                )) }
 
+            { /* Bouton d'ajout de projets */ }
             <AddProject/>
 
         </div>
