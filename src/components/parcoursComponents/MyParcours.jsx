@@ -58,18 +58,19 @@ function MyParcours({ information, title, description }) {
     return (
         <div style={ content }>
 
-            {/* Information on the left */ }
+            {/* --------------------------------------- Content on the left --------------------------------------- */ }
             <div style={ content.leftGrid }>
                 <p style={ content.leftGrid.informationStyle }>{ information }</p>
             </div>
 
-            {/* Content on the right */ }
+
+            {/* --------------------------------------- Content on the right -------------------------------------- */ }
             <div style={ content.rightGrid }>
 
-                <button style={ content.rightGrid.titleStyle } onClick={dropDown}>
+                <button style={ content.rightGrid.titleStyle } onClick={ dropDown }>
                     { title }
-                    <span style={{ marginLeft: '10px', fontSize: '0.8em' }}>
-                        {isOpen ? '▲' : '▼'}
+                    <span style={ { marginLeft: '10px', fontSize: '0.8em' } }>
+                        { isOpen ? '▲' : '▼' }
                     </span>
                 </button>
 
