@@ -5,8 +5,8 @@ function ParcoursPage() {
 
     const content = {
         justifyItems: "center",
-        marginTop: "150px",
-        marginBottom: "50px",
+        marginTop: "50px",
+        marginBottom: "100px",
 
         grid: {
             width: "80%",
