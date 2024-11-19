@@ -13,6 +13,7 @@ function ProjectsPage() {
         marginBottom: "100px",
     }
 
+    // Récupérer les projets dans le localStorage
     const savedProjects = JSON.parse(localStorage.getItem("projects")) || [];
 
     return (
@@ -36,7 +37,6 @@ function ProjectsPage() {
                     url={ project.imageProjectFileBase64 }
                 />
             )) }
-
 
             <AddProject/>
 

@@ -1,6 +1,5 @@
 import Swal from "sweetalert2";
 import Button from "../globalComponents/Button.jsx";
-import MyProject from "./MyProject.jsx";
 
 function AddProject() {
 
@@ -28,7 +27,7 @@ function AddProject() {
                         <input id="swal-image" type="file" accept="image/*" class="swal2-file">
                     </div>
                 </div>
-`,
+            `,
             confirmButtonText: 'Enregistrer',
 
             preConfirm: () => {
