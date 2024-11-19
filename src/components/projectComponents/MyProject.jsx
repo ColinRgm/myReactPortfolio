@@ -12,21 +12,35 @@ function MyProject({ title, description, url }) {
 
         // Description du projet
         descriptionStyle: {
-            fontSize: "12px",
+            fontSize: "14px",
         },
 
         // Image du projet
         imgStyle: {
-            width: '100%'
-        }
+            width: '70%'
+        },
+
+        separator: {
+
+            // Grande ligne
+            large: {
+                border: "none",
+                borderTop: "3px solid #FC7A1E",
+                margin: "30px auto 60px auto",
+                width: "50%"
+            },
+        },
     }
 
     return (
 
         <div style={ content }>
-            <h1 style={ content.titleStyle }>{ title }</h1>
-            <p style={ content.descriptionStyle }>{ description }</p>
-            <img style={ content.imgStyle } src={ url } alt={ title }/>
+            <div>
+                <h1 style={ content.titleStyle }>{ title }</h1>
+                <p style={ content.descriptionStyle }>{ description }</p>
+                <img style={ content.imgStyle } src={ url } alt={ title }/>
+            </div>
+            <hr style={ content.separator.large }></hr>
         </div>
 
     )

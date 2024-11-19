@@ -1,17 +1,22 @@
 [
   {
     "title": "HTML / CSS",
-    "description": "",
+    "description": "Mon premier site web",
     "url": "/img/projectsPage/projectOne.png"
   },
   {
     "title": "HTML / CSS / JAVASCRIPT",
-    "description": "fdbdfb",
+    "description": "Calculateur de moyennes",
     "url": "/img/projectsPage/projectTwo.png"
   },
   {
     "title": "FIGMA",
     "description": "Maquette pour un futur projet",
     "url": "/img/projectsPage/projectThree.png"
+  },
+  {
+    "title": "RUST",
+    "description": "Application console d'une Todo liste",
+    "url": "/img/projectsPage/projectFour.png"
   }
 ]

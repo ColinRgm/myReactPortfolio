@@ -8,7 +8,6 @@ import projectsDatas from "../datas/Projects.json";
 function ProjectsPage() {
 
     const content = {
-        alignContent: "center",
         justifyItems: "center",
         marginTop: "50px",
         marginBottom: "100px",
@@ -31,7 +30,7 @@ function ProjectsPage() {
 
         </div>
 
-    );
+    )
 }
 
 export default ProjectsPage;
