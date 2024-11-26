@@ -54,7 +54,7 @@ function HomePage() {
         <div style={ content }>
 
             <h1 style={ content.titleStyle }>
-                <Typewriter text="Bonjour, je m'appelle Regamey" delay={ 150 }/>
+                <Typewriter text="Bonjour, je m'appelle Colin Regamey" delay={ 150 }/>
             </h1>
 
             <h2>Bienvenue sur mon portfolio</h2>
